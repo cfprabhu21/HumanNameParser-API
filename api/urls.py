@@ -4,7 +4,7 @@ from api import views
 
 urlpatterns = {
     url(r'^humannameparser/$', views.GetHumanNameParser.as_view()),
-    url(r'^mapflag/$', views.MapFlagAPI.as_view()),
+    url(r'^mapflag/$', views.GetStatus.as_view()),
 }
 
 urlpatterns = format_suffix_patterns(urlpatterns)
